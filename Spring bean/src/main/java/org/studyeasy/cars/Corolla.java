@@ -9,12 +9,12 @@ import org.studyeasy.interfaces.Engine;
 public class Corolla implements Car {
 	
 	@Autowired
-	@Qualifier("V6Engine")
-	Engine engine;
+//	@Qualifier("V6Engine")
+	Engine V8Engine;
     
 	
 	public String specs() {
-		String specs = "Sedan from Toyota with engine type " + engine.type();
+		String specs = "Sedan from Toyota with engine type " + V8Engine.type();
 		return specs;
 	}
 
